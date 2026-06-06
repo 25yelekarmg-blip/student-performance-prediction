@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #1f2937;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+}
+
+.app-panel {
+    width: 100%;
+    max-width: 680px;
+    background: #ffffff;
+    padding: 28px;
+    border-radius: 8px;
+    border: 1px solid #d8e0ea;
+    box-shadow: 0 8px 24px rgba(31, 41, 55, 0.08);
+}
+
+h1 {
+    margin: 0;
+    font-size: 28px;
+    color: #12355b;
+}
+
+.subtitle {
+    margin: 8px 0 24px;
+    color: #5c6675;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 6px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+input,
+select {
+    padding: 11px;
+    border: 1px solid #b8c2cc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+button {
+    padding: 12px 16px;
+    border: none;
+    border-radius: 6px;
+    background: #2563eb;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+.secondary-button {
+    background: #e5e7eb;
+    color: #1f2937;
+}
+
+.secondary-button:hover {
+    background: #d1d5db;
+}
+
+.result-box {
+    margin-top: 24px;
+    padding: 18px;
+    border-radius: 8px;
+    border: 1px solid #b8c2cc;
+    background: #f8fafc;
+}
+
+.result-box h2 {
+    margin: 0 0 8px;
+    font-size: 20px;
+}
+
+#predictionText {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.score-text {
+    margin-bottom: 0;
+    color: #5c6675;
+}
+
+.good {
+    color: #15803d;
+}
+
+.average {
+    color: #b45309;
+}
+
+.poor {
+    color: #b91c1c;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 640px) {
+    form {
+        grid-template-columns: 1fr;
+    }
+
+    .app-panel {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}
